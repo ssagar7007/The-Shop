@@ -8,6 +8,9 @@ import { AuthProvider } from "./context/auth";
 import { SearchProvider } from "./context/search";
 import { CartProvider } from "./context/cart";
 import "antd/dist/reset.css";
+import axios from "axios";
+
+axios.defaults.baseURL = 'https://the-shop-backend.onrender.com/';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
